@@ -1,0 +1,86 @@
+apiVersion: batch/v1
+kind: Job
+metadata: {name: tenderai-migrate, namespace: tenderai}
+spec:
+  backoffLimit: 3
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: migrate
+          image: tenderai:0.1.0
+          command: ["tenderai", "migrate"]
+          envFrom: [{configMapRef: {name: tenderai-config}}]
+          env:
+            - name: POSTGRES_PASSWORD
+              valueFrom: {secretKeyRef: {name: tenderai-secrets, key: POSTGRES_PASSWORD}}
+            - name: AGENT_DB_PASSWORD
+              valueFrom: {secretKeyRef: {name: tenderai-secrets, key: AGENT_DB_PASSWORD}}
+            - name: OWS_TOKEN
+              valueFrom: {secretKeyRef: {name: tenderai-secrets, key: OWS_TOKEN}}
+            - {name: DATABASE_URL, value: "postgresql://tenderai:$(POSTGRES_PASSWORD)@postgres:5432/tenderai"}
+            - {name: AGENT_DATABASE_URL, value: "postgresql://tenderai_agent:$(AGENT_DB_PASSWORD)@postgres:5432/tenderai"}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: tenderai-api, namespace: tenderai}
+spec:
+  replicas: 1   # one local LLM: the API serialises requests; scale the LLM before scaling the API
+  selector: {matchLabels: {app: tenderai-api}}
+  template:
+    metadata: {labels: {app: tenderai-api}}
+    spec:
+      securityContext: {runAsNonRoot: true, runAsUser: 10001}
+      containers:
+        - name: api
+          image: tenderai:0.1.0
+          ports: [{containerPort: 8010}]
+          envFrom: [{configMapRef: {name: tenderai-config}}]
+          env:
+            - name: POSTGRES_PASSWORD
+              valueFrom: {secretKeyRef: {name: tenderai-secrets, key: POSTGRES_PASSWORD}}
+            - name: AGENT_DB_PASSWORD
+              valueFrom: {secretKeyRef: {name: tenderai-secrets, key: AGENT_DB_PASSWORD}}
+            - name: OWS_TOKEN
+              valueFrom: {secretKeyRef: {name: tenderai-secrets, key: OWS_TOKEN}}
+            - {name: DATABASE_URL, value: "postgresql://tenderai:$(POSTGRES_PASSWORD)@postgres:5432/tenderai"}
+            - {name: AGENT_DATABASE_URL, value: "postgresql://tenderai_agent:$(AGENT_DB_PASSWORD)@postgres:5432/tenderai"}
+          readinessProbe: {httpGet: {path: /health, port: 8010}, periodSeconds: 15, timeoutSeconds: 10}
+          resources: {requests: {cpu: "250m", memory: 512Mi}, limits: {memory: 2Gi}}
+---
+apiVersion: v1
+kind: Service
+metadata: {name: tenderai-api, namespace: tenderai}
+spec: {selector: {app: tenderai-api}, ports: [{port: 80, targetPort: 8010}]}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata: {name: tenderai-incremental, namespace: tenderai}
+spec:
+  schedule: "0 */3 * * *"          # every 3 h => data lag well under the 24 h requirement
+  timeZone: Asia/Almaty
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 5
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      template:
+        spec:
+          restartPolicy: OnFailure
+          securityContext: {runAsNonRoot: true, runAsUser: 10001}
+          containers:
+            - name: incremental
+              image: tenderai:0.1.0
+              command: ["tenderai", "incremental"]
+              envFrom: [{configMapRef: {name: tenderai-config}}]
+              env:
+                - name: POSTGRES_PASSWORD
+                  valueFrom: {secretKeyRef: {name: tenderai-secrets, key: POSTGRES_PASSWORD}}
+                - name: AGENT_DB_PASSWORD
+                  valueFrom: {secretKeyRef: {name: tenderai-secrets, key: AGENT_DB_PASSWORD}}
+                - name: OWS_TOKEN
+                  valueFrom: {secretKeyRef: {name: tenderai-secrets, key: OWS_TOKEN}}
+                - {name: DATABASE_URL, value: "postgresql://tenderai:$(POSTGRES_PASSWORD)@postgres:5432/tenderai"}
+                - {name: AGENT_DATABASE_URL, value: "postgresql://tenderai_agent:$(AGENT_DB_PASSWORD)@postgres:5432/tenderai"}
+              resources: {requests: {cpu: "250m", memory: 512Mi}, limits: {memory: 2Gi}}

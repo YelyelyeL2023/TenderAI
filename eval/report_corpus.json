@@ -1,0 +1,3571 @@
+{
+  "cases": 54,
+  "repeats": 3,
+  "fact_accuracy": 0.9733,
+  "facts_total": 450,
+  "facts_correct": 438,
+  "facts_echoed_not_scored": 13,
+  "check_accuracy": 1.0,
+  "checks_total": 39,
+  "checks_passed": 39,
+  "intent_accuracy": 0.963,
+  "llm_verdict_share": 0.8704,
+  "llm": true,
+  "worst_run_fact_accuracy": 0.9733,
+  "stable_share": 1.0,
+  "unstable": [],
+  "results": [
+    {
+      "id": "search_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 2,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.4,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "Национального госпиталя (БИН 231040023028)",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.4
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "Национального госпиталя (БИН 231040023028)",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.5
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "Национального госпиталя (БИН 231040023028)",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        }
+      ]
+    },
+    {
+      "id": "search_02",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "Президентский центр",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.3
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "Президентский центр",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "Президентский центр",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        }
+      ]
+    },
+    {
+      "id": "search_03",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "analytics",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.8,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": "Автохозяйство УДП",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.8
+        },
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": "Автохозяйство УДП",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        },
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": "Автохозяйство УДП",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        }
+      ]
+    },
+    {
+      "id": "search_04",
+      "lang": "kk",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 3,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.7,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "«Бурабай даму» ЖШС",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.7
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "«Бурабай даму» ЖШС",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.5
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "«Бурабай даму» ЖШС",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        }
+      ]
+    },
+    {
+      "id": "search_05",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "analytics",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 3,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 3.8,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": "УМТО при Генеральной прокуратуре",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        },
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": "УМТО при Генеральной прокуратуре",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.0
+        },
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": "УМТО при Генеральной прокуратуре",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.0
+        }
+      ]
+    },
+    {
+      "id": "search_06",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 1,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 5,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 3.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": "ноутбуки",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.6
+        },
+        {
+          "intent": "search",
+          "item": "ноутбуки",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.0
+        },
+        {
+          "intent": "search",
+          "item": "ноутбуки",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.0
+        }
+      ]
+    },
+    {
+      "id": "search_07",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 2,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 5,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 3.8,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": "офисная бумага А4 в пачках",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        },
+        {
+          "intent": "search",
+          "item": "офисная бумага А4 в пачках",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.2
+        },
+        {
+          "intent": "search",
+          "item": "офисная бумага А4 в пачках",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.2
+        }
+      ]
+    },
+    {
+      "id": "search_08",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 1,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "АО «ЦКБ»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.3
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "АО «ЦКБ»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.8
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "АО «ЦКБ»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.8
+        }
+      ]
+    },
+    {
+      "id": "search_09",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 0,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.1,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "Отеля «Алатау»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.1
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "Отеля «Алатау»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.8
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "Отеля «Алатау»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.9
+        }
+      ]
+    },
+    {
+      "id": "analytics_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.0,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "analytics",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.4
+        },
+        {
+          "intent": "analytics",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.4
+        }
+      ]
+    },
+    {
+      "id": "analytics_02",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 8,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 3.8,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "бензин АИ-92",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        },
+        {
+          "intent": "analytics",
+          "item": "бензин АИ-92",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.6
+        },
+        {
+          "intent": "analytics",
+          "item": "бензин АИ-92",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.5
+        }
+      ]
+    },
+    {
+      "id": "analytics_03",
+      "lang": "kk",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [
+        "172314.500.000002",
+        2091.26,
+        2080.0,
+        55.0
+      ],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.4,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "А4 форматты кеңсе қағазы",
+          "customer": null,
+          "missed": [
+            "172314.500.000002",
+            2091.26,
+            2080.0,
+            55.0
+          ],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.4
+        },
+        {
+          "intent": "analytics",
+          "item": "А4 форматты кеңсе қағазы",
+          "customer": null,
+          "missed": [
+            "172314.500.000002",
+            2091.26,
+            2080.0,
+            55.0
+          ],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.9
+        },
+        {
+          "intent": "analytics",
+          "item": "А4 форматты кеңсе қағазы",
+          "customer": null,
+          "missed": [
+            "172314.500.000002",
+            2091.26,
+            2080.0,
+            55.0
+          ],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.9
+        }
+      ]
+    },
+    {
+      "id": "analytics_04",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 5,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.0,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "канцелярская ручка",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "analytics",
+          "item": "канцелярская ручка",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.0
+        },
+        {
+          "intent": "analytics",
+          "item": "канцелярская ручка",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.0
+        }
+      ]
+    },
+    {
+      "id": "analytics_05",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 8,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "011334.100.000000",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.6
+        },
+        {
+          "intent": "analytics",
+          "item": "011334.100.000000",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "analytics",
+          "item": "011334.100.000000",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.4
+        }
+      ]
+    },
+    {
+      "id": "analytics_06",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 11,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.2,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "салат",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 11,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.2
+        },
+        {
+          "intent": "analytics",
+          "item": "салат",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 11,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.4
+        },
+        {
+          "intent": "analytics",
+          "item": "салат",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 11,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.4
+        }
+      ]
+    },
+    {
+      "id": "analytics_07",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 8,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.8,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "твёрдое хозяйственное мыло",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.8
+        },
+        {
+          "intent": "analytics",
+          "item": "твёрдое хозяйственное мыло",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.9
+        },
+        {
+          "intent": "analytics",
+          "item": "твёрдое хозяйственное мыло",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        }
+      ]
+    },
+    {
+      "id": "analytics_11",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 9,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "зимнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 9,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.6
+        },
+        {
+          "intent": "analytics",
+          "item": "зимнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 9,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        },
+        {
+          "intent": "analytics",
+          "item": "зимнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 9,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        }
+      ]
+    },
+    {
+      "id": "analytics_12",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 8,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.2,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "бензин АИ-95",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        },
+        {
+          "intent": "analytics",
+          "item": "бензин АИ-95",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.3
+        },
+        {
+          "intent": "analytics",
+          "item": "бензин АИ-95",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.5
+        }
+      ]
+    },
+    {
+      "id": "analytics_08",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 8,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 20,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "бензин",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 20,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.3
+        },
+        {
+          "intent": "analytics",
+          "item": "бензин",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 20,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.3
+        },
+        {
+          "intent": "analytics",
+          "item": "бензин",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 20,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.1
+        }
+      ]
+    },
+    {
+      "id": "analytics_09",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 2,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.1,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        },
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.1
+        },
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.1
+        }
+      ]
+    },
+    {
+      "id": "analytics_10",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 2,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 3.7,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": "Медицинский центр УДП",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.7
+        },
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": "Медицинский центр УДП",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.0
+        },
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": "Медицинский центр УДП",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.1
+        }
+      ]
+    },
+    {
+      "id": "compare_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "compare",
+      "intent": "compare",
+      "facts": 2,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 5,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "compare",
+          "item": "услуги телефонной связи",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.3
+        },
+        {
+          "intent": "compare",
+          "item": "услуги телефонной связи",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.4
+        },
+        {
+          "intent": "compare",
+          "item": "услуги телефонной связи",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.4
+        }
+      ]
+    },
+    {
+      "id": "compare_02",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "compare",
+      "intent": "compare",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.0,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": "Больницы МЦ УДП; Национального госпиталя",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": "Больницы МЦ УДП; Национального госпиталя",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.0
+        },
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": "Больницы МЦ УДП; Национального госпиталя",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.3
+        }
+      ]
+    },
+    {
+      "id": "compare_03",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "compare",
+      "intent": "compare",
+      "facts": 2,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.4,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "compare",
+          "item": "бензин",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.4
+        },
+        {
+          "intent": "compare",
+          "item": "бензин",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.1
+        },
+        {
+          "intent": "compare",
+          "item": "бензин",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.2
+        }
+      ]
+    },
+    {
+      "id": "compare_04",
+      "lang": "kk",
+      "group": null,
+      "intent_expected": "compare",
+      "intent": "compare",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.4,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": "Бурабай ұлттық паркі; Бурабай даму",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.4
+        },
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": "Бурабай ұлттық паркі; Бурабай даму",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.1
+        },
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": "Бурабай ұлттық паркі; Бурабай даму",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.8
+        }
+      ]
+    },
+    {
+      "id": "compare_05",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "compare",
+      "intent": "compare",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "compare",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.6
+        },
+        {
+          "intent": "compare",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "compare",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.4
+        }
+      ]
+    },
+    {
+      "id": "compare_06",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "compare",
+      "intent": "compare",
+      "facts": 2,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 2,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 3.7,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "compare",
+          "item": "картриджи",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 2,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.7
+        },
+        {
+          "intent": "compare",
+          "item": "картриджи",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 2,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 2.6
+        },
+        {
+          "intent": "compare",
+          "item": "картриджи",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 2,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 2.6
+        }
+      ]
+    },
+    {
+      "id": "compare_07",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "compare",
+      "intent": "compare",
+      "facts": 2,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 8,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.0,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.1
+        },
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.4
+        }
+      ]
+    },
+    {
+      "id": "price_anomaly_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.8,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.8
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        }
+      ]
+    },
+    {
+      "id": "price_anomaly_02",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 8,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": "Больницы МЦ УДП (990740002243)",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.3
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": "Больницы МЦ УДП (990740002243)",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.5
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": "Больницы МЦ УДП (990740002243)",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.5
+        }
+      ]
+    },
+    {
+      "id": "price_anomaly_03",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 1,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 2,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 3.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": "бензин",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 2,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.6
+        },
+        {
+          "intent": "price_anomaly",
+          "item": "бензин",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 2,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.0
+        },
+        {
+          "intent": "price_anomaly",
+          "item": "бензин",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 2,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 2.9
+        }
+      ]
+    },
+    {
+      "id": "price_anomaly_04",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 3.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": "Автохозяйство ДХО",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.6
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": "Автохозяйство ДХО",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.0
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": "Автохозяйство ДХО",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 2.9
+        }
+      ]
+    },
+    {
+      "id": "price_anomaly_05",
+      "lang": "kk",
+      "group": null,
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.8,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.8
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.3
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.0
+        }
+      ]
+    },
+    {
+      "id": "price_anomaly_06",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 5,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": "картриджи",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.3
+        },
+        {
+          "intent": "price_anomaly",
+          "item": "картриджи",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.7
+        },
+        {
+          "intent": "price_anomaly",
+          "item": "картриджи",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.5
+        }
+      ]
+    },
+    {
+      "id": "price_anomaly_07",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 1,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.2,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.5
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.5
+        }
+      ]
+    },
+    {
+      "id": "price_anomaly_08",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 3.5,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": "дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.5
+        },
+        {
+          "intent": "price_anomaly",
+          "item": "дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.0
+        },
+        {
+          "intent": "price_anomaly",
+          "item": "дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 2.8
+        }
+      ]
+    },
+    {
+      "id": "fair_price_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.5,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.5
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        }
+      ]
+    },
+    {
+      "id": "fair_price_02",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": "бумага",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.6
+        },
+        {
+          "intent": "fair_price",
+          "item": "бумага",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        },
+        {
+          "intent": "fair_price",
+          "item": "бумага",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        }
+      ]
+    },
+    {
+      "id": "fair_price_03",
+      "lang": "kk",
+      "group": null,
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 2,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 7.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 2,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 7.6
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 2,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 7.0
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 2,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 7.0
+        }
+      ]
+    },
+    {
+      "id": "fair_price_04",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 5,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.2,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": "ручки",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        },
+        {
+          "intent": "fair_price",
+          "item": "ручки",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.4
+        },
+        {
+          "intent": "fair_price",
+          "item": "ручки",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.4
+        }
+      ]
+    },
+    {
+      "id": "fair_price_05",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 2,
+        "checked": 8,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 7.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 2,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 7.6
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 2,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 7.2
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 2,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 7.1
+        }
+      ]
+    },
+    {
+      "id": "fair_price_06",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.9,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": "картридж",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.9
+        },
+        {
+          "intent": "fair_price",
+          "item": "картридж",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.3
+        },
+        {
+          "intent": "fair_price",
+          "item": "картридж",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        }
+      ]
+    },
+    {
+      "id": "fair_price_07",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.2,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        }
+      ]
+    },
+    {
+      "id": "fair_price_08",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 0,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.5,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": "№12345678-ЗЦП9",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.5
+        },
+        {
+          "intent": "fair_price",
+          "item": "№12345678-ЗЦП9",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.0
+        },
+        {
+          "intent": "fair_price",
+          "item": "№12345678-ЗЦП9",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.1
+        }
+      ]
+    },
+    {
+      "id": "fair_price_09",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 0,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.1,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": "бензин",
+          "customer": "Автохозяйство УДП",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.1
+        },
+        {
+          "intent": "fair_price",
+          "item": "бензин",
+          "customer": "Автохозяйство УДП",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.8
+        },
+        {
+          "intent": "fair_price",
+          "item": "бензин",
+          "customer": "Автохозяйство УДП",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.8
+        }
+      ]
+    },
+    {
+      "id": "volume_anomaly_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.5,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.5
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        }
+      ]
+    },
+    {
+      "id": "volume_anomaly_02",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 8,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "Больница МЦ УДП",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.6
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "Больница МЦ УДП",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.1
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "Больница МЦ УДП",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.0
+        }
+      ]
+    },
+    {
+      "id": "volume_anomaly_03",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 2,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 5,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": "бензин",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.6
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": "бензин",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": "бензин",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        }
+      ]
+    },
+    {
+      "id": "volume_anomaly_04",
+      "lang": "kk",
+      "group": null,
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 6.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "ҚР Президенті Іс басқармасының Автошаруашылығы",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 6.3
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "ҚР Президенті Іс басқармасының Автошаруашылығы",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 6.3
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "ҚР Президенті Іс басқармасының Автошаруашылығы",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.7
+        }
+      ]
+    },
+    {
+      "id": "volume_anomaly_05",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.8,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.8
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.4
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        }
+      ]
+    },
+    {
+      "id": "volume_anomaly_06",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.8,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "Дирекция административных зданий Администрации Президента и Правительства",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.8
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "Дирекция административных зданий Администрации Президента и Правительства",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.4
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "Дирекция административных зданий Администрации Президента и Правительства",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.2
+        }
+      ]
+    },
+    {
+      "id": "volume_anomaly_07",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 1,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 9,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 6.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": "топливо дизельное",
+          "customer": "971040001050",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 9,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 6.3
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": "топливо дизельное",
+          "customer": "971040001050",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 9,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.8
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": "топливо дизельное",
+          "customer": "971040001050",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 9,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.8
+        }
+      ]
+    },
+    {
+      "id": "edge_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 0,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.0,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.0
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.6
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.6
+        }
+      ]
+    },
+    {
+      "id": "edge_02",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 0,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.1,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "акимат города Алматы",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.1
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "акимат города Алматы",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.7
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "акимат города Алматы",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.8
+        }
+      ]
+    }
+  ]
+}

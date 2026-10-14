@@ -1,0 +1,84 @@
+{
+ "data": {
+  "TrdBuy": [
+   {
+    "id": 15853640,
+    "numberAnno": "15853640-1",
+    "nameRu": "Услуги перевода договоров на 2026 год",
+    "totalSum": 1200000,
+    "countLots": 1,
+    "refTradeMethodsId": 3,
+    "refSubjectTypeId": 3,
+    "customerBin": null,
+    "orgBin": "000740001307",
+    "refBuyStatusId": 350,
+    "publishDate": "2025-12-23 10:46:17",
+    "endDate": "2025-12-25 11:05:00",
+    "itogiDatePublic": "2025-12-25 11:12:09",
+    "finYear": [
+     2026
+    ],
+    "kato": [
+     "711210000"
+    ],
+    "lastUpdateDate": "2025-12-25 11:12:12",
+    "indexDate": "2025-12-25T06:20:05.500"
+   },
+   {
+    "id": 15853238,
+    "numberAnno": "15853238-1",
+    "nameRu": "Вода негазированная, объем в бутылке 18,9 литров",
+    "totalSum": 896545,
+    "countLots": 1,
+    "refTradeMethodsId": 3,
+    "refSubjectTypeId": 1,
+    "customerBin": null,
+    "orgBin": "000740001307",
+    "refBuyStatusId": 350,
+    "publishDate": "2025-12-23 10:43:31",
+    "endDate": "2025-12-25 10:46:30",
+    "itogiDatePublic": "2025-12-25 10:51:27",
+    "finYear": [
+     2026
+    ],
+    "kato": [
+     "711210000"
+    ],
+    "lastUpdateDate": "2025-12-25 10:51:27",
+    "indexDate": "2025-12-25T06:00:06.896"
+   },
+   {
+    "id": 15839645,
+    "numberAnno": "15839645-1",
+    "nameRu": "Услуги по курьерской почтовой связи на 2026 год",
+    "totalSum": 1010446.54,
+    "countLots": 3,
+    "refTradeMethodsId": 3,
+    "refSubjectTypeId": 3,
+    "customerBin": null,
+    "orgBin": "000740001307",
+    "refBuyStatusId": 350,
+    "publishDate": "2025-12-19 16:05:47",
+    "endDate": "2025-12-23 16:10:10",
+    "itogiDatePublic": "2025-12-23 16:15:39",
+    "finYear": [
+     2026
+    ],
+    "kato": [
+     "711210000"
+    ],
+    "lastUpdateDate": "2025-12-23 16:15:39",
+    "indexDate": "2025-12-23T11:20:05.318"
+   }
+  ]
+ },
+ "extensions": {
+  "pageInfo": {
+   "limitPage": 3,
+   "totalCount": 381,
+   "hasNextPage": true,
+   "lastId": 15839645,
+   "lastIndexDate": "2025-12-23T11:20:05.318"
+  }
+ }
+}

@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata: {name: postgres, namespace: tenderai}
+spec:
+  serviceName: postgres
+  replicas: 1
+  selector: {matchLabels: {app: postgres}}
+  template:
+    metadata: {labels: {app: postgres}}
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:16.4-alpine
+          env:
+            - {name: POSTGRES_DB, value: tenderai}
+            - {name: POSTGRES_USER, value: tenderai}
+            - name: POSTGRES_PASSWORD
+              valueFrom: {secretKeyRef: {name: tenderai-secrets, key: POSTGRES_PASSWORD}}
+            - {name: PGDATA, value: /var/lib/postgresql/data/pgdata}
+          ports: [{containerPort: 5432}]
+          readinessProbe: {exec: {command: ["pg_isready", "-U", "tenderai", "-d", "tenderai"]}, periodSeconds: 5}
+          resources: {requests: {cpu: "500m", memory: 1Gi}, limits: {memory: 4Gi}}
+          args: ["-c", "shared_buffers=512MB", "-c", "work_mem=64MB", "-c", "maintenance_work_mem=256MB"]
+          volumeMounts:
+            - {name: data, mountPath: /var/lib/postgresql/data}
+            - {name: dshm, mountPath: /dev/shm}   # default shm is too small for parallel queries
+      volumes:
+        - name: dshm
+          emptyDir: {medium: Memory, sizeLimit: 1Gi}
+  volumeClaimTemplates:
+    - metadata: {name: data}
+      spec: {accessModes: [ReadWriteOnce], resources: {requests: {storage: 20Gi}}}
+---
+apiVersion: v1
+kind: Service
+metadata: {name: postgres, namespace: tenderai}
+spec: {selector: {app: postgres}, ports: [{port: 5432}]}

@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TenderAI</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<style>
+  :root {
+    --paper:#fbfaf6; --sheet:#ffffff; --ink:#1c1b19; --soft:#5f5b53; --rule:#dcd8ce; --rule-2:#ece9e1;
+    --accent:#2a5c7c; --mark:#fff3c4; --bad:#9b3426; --good:#3d6b35;
+    --serif:Georgia, "PT Serif", "Times New Roman", serif;
+    --sans:system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --mono:ui-monospace, Consolas, "Cascadia Mono", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:#1b1a18; --sheet:#22211e; --ink:#e9e5dc; --soft:#a39e93; --rule:#3a3832; --rule-2:#2d2c28;
+      --accent:#8db8d6; --mark:#4a4120; --bad:#e08a7a; --good:#9cc48f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:#1b1a18; --sheet:#22211e; --ink:#e9e5dc; --soft:#a39e93; --rule:#3a3832; --rule-2:#2d2c28;
+    --accent:#8db8d6; --mark:#4a4120; --bad:#e08a7a; --good:#9cc48f;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:15px/1.55 var(--sans);
+         min-height:100vh; display:flex; flex-direction:column; }
+  main { flex:1; }
+  a { color:var(--accent); }
+  .wrap { max-width:920px; margin:0 auto; padding:0 20px; }
+
+  header { border-bottom:2px solid var(--ink); }
+  header .wrap { display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; padding-top:18px; padding-bottom:10px; }
+  header h1 { font:700 22px/1 var(--serif); margin:0; letter-spacing:-.01em; }
+  header .sub { color:var(--soft); font-size:13px; }
+  header .status { margin-left:auto; font-size:12.5px; color:var(--soft); display:flex; gap:14px; align-items:baseline; flex-wrap:wrap; }
+  .status b { font-weight:600; color:var(--ink); }
+  .status .bad { color:var(--bad); } .status .warn { color:var(--bad); }
+  #theme { font:inherit; font-size:12.5px; color:var(--soft); background:none; border:0; padding:0; cursor:pointer;
+           text-decoration:underline; text-underline-offset:2px; }
+
+  main .wrap { padding-top:22px; padding-bottom:20px; }
+  .intro { max-width:640px; }
+  .intro p { margin:0 0 10px; }
+  .intro .muted { color:var(--soft); font-size:14px; }
+  .intro ul { margin:6px 0 0; padding-left:18px; }
+  .intro li { margin:5px 0; }
+  .intro button { font:inherit; color:var(--accent); background:none; border:0; padding:0; cursor:pointer; text-align:left;
+                  text-decoration:underline; text-decoration-color:color-mix(in srgb, var(--accent) 40%, transparent); text-underline-offset:3px; }
+  .intro button:hover { text-decoration-color:var(--accent); }
+
+  /* one question + its answer = one entry */
+  .entry { margin-top:26px; padding-top:16px; border-top:1px solid var(--rule); }
+  .entry:first-child { border-top:0; margin-top:4px; }
+  .q { font:600 17px/1.4 var(--serif); margin:0 0 4px; }
+  .q-meta { font-size:12px; color:var(--soft); margin-bottom:12px; }
+  .q-meta span + span::before { content:" · "; }
+
+  .report { background:var(--sheet); border:1px solid var(--rule); }
+  .report section { display:grid; grid-template-columns:170px 1fr; gap:18px; padding:12px 16px; border-top:1px solid var(--rule-2); }
+  .report section:first-child { border-top:0; }
+  .report h3 { margin:2px 0 0; font:600 11.5px/1.35 var(--sans); text-transform:uppercase; letter-spacing:.05em; color:var(--soft); }
+  .report .body > :first-child { margin-top:0; } .report .body > :last-child { margin-bottom:0; }
+  .report section.verdict { background:color-mix(in srgb, var(--mark) 55%, var(--sheet)); }
+  .report section.verdict .body { font:16px/1.55 var(--serif); font-variant-numeric:lining-nums; }
+  .report ul, .report ol { margin:4px 0; padding-left:20px; } .report li { margin:3px 0; }
+  .report p { margin:6px 0; }
+  .report strong { font-weight:650; }
+  .report code { font:12.5px var(--mono); }
+  .tbl { overflow-x:auto; margin:6px 0; }
+  .report table { border-collapse:collapse; font-size:13px; font-variant-numeric:tabular-nums; }
+  .report th { text-align:left; font-weight:600; border-bottom:1.5px solid var(--ink); padding:4px 14px 4px 0; white-space:nowrap; }
+  .report td { border-bottom:1px solid var(--rule-2); padding:4px 14px 4px 0; white-space:nowrap; }
+  .report ol li { font-variant-numeric:tabular-nums; }
+
+  details.tech { border-top:1px solid var(--rule-2); font-size:12.5px; color:var(--soft); }
+  details.tech summary { cursor:pointer; padding:8px 16px; }
+  details.tech pre { margin:0; padding:0 16px 12px; font:12px/1.45 var(--mono); white-space:pre-wrap; word-break:break-word; }
+
+  .waiting { color:var(--soft); font-size:14px; padding:4px 0; }
+  .error { color:var(--bad); }
+
+  .ask { position:sticky; bottom:0; background:var(--paper); border-top:1px solid var(--rule); }
+  .ask .wrap { padding-top:12px; padding-bottom:14px; }
+  form { display:flex; gap:10px; align-items:stretch; }
+  textarea { flex:1; min-height:46px; max-height:160px; resize:vertical; padding:10px 12px; font:inherit; color:var(--ink);
+             background:var(--sheet); border:1px solid var(--rule); border-radius:3px; }
+  textarea:focus { outline:2px solid color-mix(in srgb, var(--accent) 45%, transparent); outline-offset:-1px; border-color:var(--accent); }
+  #b { font:600 14px var(--sans); padding:0 18px; border:1px solid var(--ink); border-radius:3px; background:var(--ink); color:var(--paper); cursor:pointer; }
+  #b:hover { background:var(--accent); border-color:var(--accent); }
+  #b:disabled { opacity:.5; cursor:wait; }
+  .ask small { display:block; margin-top:6px; color:var(--soft); font-size:12px; }
+
+  @media (max-width:640px) {
+    .report section { grid-template-columns:1fr; gap:4px; }
+    header .status { margin-left:0; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>TenderAI</h1>
+    <span class="sub">госзакупки РК, 27 заказчиков, 2024–2026</span>
+    <div class="status">
+      <span id="s-data">проверяю данные…</span>
+      <span id="s-llm"></span>
+      <button id="theme" type="button">тёмная тема</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="intro" id="intro">
+      <p>Задайте вопрос о закупках на русском или казахском. Все цифры считаются по данным goszakup.gov.kz (OWS v3);
+         в ответе указаны выборка, метод, ограничения и ссылки на сами лоты и договоры.</p>
+      <p class="muted">Например:</p>
+      <ul id="examples"></ul>
+    </div>
+    <div id="log"></div>
+  </div>
+</main>
+
+<div class="ask">
+  <div class="wrap">
+    <form id="f">
+      <textarea id="q" rows="1" placeholder="Например: какая средняя цена бумаги А4 в 2025 году?"></textarea>
+      <button id="b">Спросить</button>
+    </form>
+    <small>Enter — отправить, Shift+Enter — перенос строки</small>
+  </div>
+</div>
+
+<script>
+const EX = [
+  "Найди закупки с отклонением цены > 30% от средневзвешенной по данному ЕНСТРУ",
+  "Выяви нетипичное завышение количества ТРУ по сравнению с предыдущими годами",
+  "Сравни расходы на услуги связи между заказчиками в 2025 году",
+  "2025 жылы дизель отынының орташа бағасы қанша?",
+];
+const INTENT = { search: "поиск", compare: "сравнение", analytics: "аналитика", price_anomaly: "ценовые аномалии",
+                 fair_price: "справедливая цена", volume_anomaly: "аномалии объёма" };
+const $ = id => document.getElementById(id);
+const log = $("log"), q = $("q"), b = $("b"), root = document.documentElement;
+
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function isDark() { return root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; }
+function themeLabel() { $("theme").textContent = isDark() ? "светлая тема" : "тёмная тема"; }
+try { const t = localStorage.getItem("theme"); if (t) root.dataset.theme = t; } catch {}
+themeLabel();
+$("theme").onclick = () => {
+  root.dataset.theme = isDark() ? "light" : "dark"; themeLabel();
+  try { localStorage.setItem("theme", root.dataset.theme); } catch {}
+};
+
+for (const text of EX) {
+  const li = document.createElement("li"), btn = document.createElement("button");
+  btn.type = "button"; btn.textContent = text; btn.onclick = () => { q.value = text; q.focus(); };
+  li.append(btn); $("examples").append(li);
+}
+
+// The agent returns markdown with "### Section" headings. Turn each into a row: label on the left, content on the right.
+function toReport(md) {
+  // keep "1 151 858 155 ₸" on one line: digit groups and the currency sign get non-breaking spaces
+  md = md.replace(/(\d) (?=\d{3}\b|₸)/g, "$1 ");
+  const tmp = document.createElement("div"); tmp.innerHTML = marked.parse(md);
+  const report = document.createElement("div"); report.className = "report";
+  let body = null;
+  for (const node of [...tmp.childNodes]) {
+    if (node.nodeName === "H3") {
+      const sec = document.createElement("section");
+      if (!report.children.length) sec.className = "verdict";
+      body = document.createElement("div"); body.className = "body";
+      sec.append(node, body); report.append(sec); continue;
+    }
+    let el = node;
+    if (node.nodeName === "TABLE") { el = document.createElement("div"); el.className = "tbl"; el.append(node); }
+    (body || report).append(el);
+  }
+  report.querySelectorAll("a").forEach(a => { a.target = "_blank"; a.rel = "noopener"; });
+  return report;
+}
+
+$("f").onsubmit = async (ev) => {
+  ev.preventDefault();
+  const text = q.value.trim(); if (!text) return;
+  $("intro").style.display = "none";
+  const entry = document.createElement("div"); entry.className = "entry";
+  entry.innerHTML = `<p class="q">${esc(text)}</p><div class="q-meta"><span>${new Date().toLocaleTimeString("ru", {hour: "2-digit", minute: "2-digit"})}</span></div><div class="waiting">Считаю… 0 с</div>`;
+  log.append(entry); entry.scrollIntoView({behavior: "smooth", block: "start"});
+  q.value = ""; b.disabled = true;
+  const t0 = Date.now(), waiting = entry.querySelector(".waiting");
+  const tick = setInterval(() => { waiting.textContent = `Считаю… ${Math.round((Date.now() - t0) / 1000)} с`; }, 1000);
+  try {
+    const r = await fetch("/ask", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({question: text})});
+    const a = await r.json(); if (!r.ok) throw new Error(a.detail || r.status);
+    const t = a.timings, secs = (t.route_s + t.tool_s + t.verdict_s).toFixed(1).replace(".", ",");
+    entry.querySelector(".q-meta").insertAdjacentHTML("beforeend",
+      `<span>${esc(INTENT[a.route.intent] || a.route.intent)}</span>` +
+      `<span>${a.verdict_source === "llm" ? "вывод написан моделью и сверен с расчётом" : "вывод по шаблону"}</span>` +
+      `<span>${secs} с</span>`);
+    const report = toReport(a.markdown);
+    report.insertAdjacentHTML("beforeend",
+      `<details class="tech"><summary>Технические подробности</summary><pre>${esc(JSON.stringify(
+        {route: a.route, params: a.tool.params, method: a.tool.method, validation: a.validation, timings: a.timings}, null, 2))}</pre></details>`);
+    waiting.replaceWith(report);
+  } catch (e) {
+    waiting.className = "error"; waiting.textContent = "Не получилось: " + (e.message || e);
+  }
+  clearInterval(tick); b.disabled = false; q.focus();
+};
+q.addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("f").requestSubmit(); } });
+
+fetch("/health").then(r => r.json()).then(h => {
+  const d = $("s-data"), l = $("s-llm");
+  if (h.db !== "ok") { d.className = "bad"; d.textContent = "база данных недоступна"; }
+  else {
+    const when = h.data_as_of ? new Date(h.data_as_of).toLocaleString("ru", {day: "numeric", month: "long", hour: "2-digit", minute: "2-digit"}) : "—";
+    d.innerHTML = `данные на <b>${esc(when)}</b>`;
+    if (!h.freshness_sla_ok) d.className = "warn";
+  }
+  l.innerHTML = h.llm.available ? `модель <b>${esc(h.llm.model)}</b>` : "модель не подключена, ответы по шаблону";
+}).catch(() => { $("s-data").className = "bad"; $("s-data").textContent = "сервер не отвечает"; });
+</script>
+</body>
+</html>

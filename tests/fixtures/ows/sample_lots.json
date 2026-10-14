@@ -1,0 +1,90 @@
+{
+ "data": {
+  "Lots": [
+   {
+    "id": 43532158,
+    "lotNumber": "80800385-ОИ6",
+    "nameRu": "Коннектор",
+    "descriptionRu": "компьютерный",
+    "count": 100,
+    "amount": 3448,
+    "customerBin": "000740001307",
+    "trdBuyId": 17751600,
+    "trdBuyNumberAnno": "17751600-1",
+    "refLotStatusId": 220,
+    "refTradeMethodsId": 3,
+    "pointList": [
+     87872260
+    ],
+    "enstruList": [
+     0
+    ],
+    "plnPointKatoList": [
+     "711210000"
+    ],
+    "isDeleted": 0,
+    "lastUpdateDate": "2026-10-08 17:04:03",
+    "indexDate": "2026-10-12 09:21:51"
+   },
+   {
+    "id": 43532157,
+    "lotNumber": "80838700-ОИ6",
+    "nameRu": "Колонка",
+    "descriptionRu": "звуковая",
+    "count": 1,
+    "amount": 34991.38,
+    "customerBin": "000740001307",
+    "trdBuyId": 17751600,
+    "trdBuyNumberAnno": "17751600-1",
+    "refLotStatusId": 220,
+    "refTradeMethodsId": 3,
+    "pointList": [
+     87881729
+    ],
+    "enstruList": [
+     0
+    ],
+    "plnPointKatoList": [
+     ""
+    ],
+    "isDeleted": 0,
+    "lastUpdateDate": "2026-10-08 17:04:02",
+    "indexDate": "2026-10-12 09:21:51"
+   },
+   {
+    "id": 43532156,
+    "lotNumber": "80817842-ОИ6",
+    "nameRu": "Флеш-накопитель",
+    "descriptionRu": "интерфейс USB 3.0, емкость более 16 Гб, но не более 64 Гб",
+    "count": 1,
+    "amount": 3439.66,
+    "customerBin": "000740001307",
+    "trdBuyId": 17751600,
+    "trdBuyNumberAnno": "17751600-1",
+    "refLotStatusId": 220,
+    "refTradeMethodsId": 3,
+    "pointList": [
+     87881777
+    ],
+    "enstruList": [
+     0
+    ],
+    "plnPointKatoList": [
+     ""
+    ],
+    "isDeleted": 0,
+    "lastUpdateDate": "2026-10-08 17:04:02",
+    "indexDate": "2026-10-12 09:21:51"
+   }
+  ]
+ },
+ "extensions": {
+  "pageInfo": {
+   "limitPage": 3,
+   "totalCount": 5426,
+   "hasNextPage": true,
+   "lastId": 43532156,
+   "lastIndexDate": "2026-10-12 09:21:51"
+  }
+ }
+}

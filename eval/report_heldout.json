@@ -1,0 +1,1491 @@
+{
+  "cases": 23,
+  "repeats": 3,
+  "fact_accuracy": 0.8636,
+  "facts_total": 198,
+  "facts_correct": 171,
+  "facts_echoed_not_scored": 3,
+  "check_accuracy": 1.0,
+  "checks_total": 21,
+  "checks_passed": 21,
+  "intent_accuracy": 0.9565,
+  "llm_verdict_share": 0.6957,
+  "llm": true,
+  "worst_run_fact_accuracy": 0.8636,
+  "stable_share": 1.0,
+  "unstable": [],
+  "results": [
+    {
+      "id": "h_search_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.2,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "детский сад «Қарлығаш»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.2
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "детский сад «Қарлығаш»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "детский сад «Қарлығаш»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.7
+        }
+      ]
+    },
+    {
+      "id": "h_search_02",
+      "lang": "kk",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [
+        "000740001307",
+        506.0,
+        404571300.8
+      ],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": "Бүркіт",
+          "customer": "Бүркіт",
+          "missed": [
+            "000740001307",
+            506.0,
+            404571300.8
+          ],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.3
+        },
+        {
+          "intent": "search",
+          "item": "Бүркіт",
+          "customer": "Бүркіт",
+          "missed": [
+            "000740001307",
+            506.0,
+            404571300.8
+          ],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.9
+        },
+        {
+          "intent": "search",
+          "item": "Бүркіт",
+          "customer": "Бүркіт",
+          "missed": [
+            "000740001307",
+            506.0,
+            404571300.8
+          ],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.9
+        }
+      ]
+    },
+    {
+      "id": "h_search_03",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "analytics",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [
+        "contract_unit:48622840",
+        179848200.0
+      ],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "Инженерно-технический УДП",
+          "customer": "Инженерно-технический центр УДП",
+          "missed": [
+            "contract_unit:48622840",
+            179848200.0
+          ],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.6
+        },
+        {
+          "intent": "analytics",
+          "item": "Инженерно-технический УДП",
+          "customer": "Инженерно-технический центр УДП",
+          "missed": [
+            "contract_unit:48622840",
+            179848200.0
+          ],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.3
+        },
+        {
+          "intent": "analytics",
+          "item": "Инженерно-технический УДП",
+          "customer": "Инженерно-технический центр УДП",
+          "missed": [
+            "contract_unit:48622840",
+            179848200.0
+          ],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.3
+        }
+      ]
+    },
+    {
+      "id": "h_analytics_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 8,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.7,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "картофель",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.7
+        },
+        {
+          "intent": "analytics",
+          "item": "картофель",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "analytics",
+          "item": "картофель",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        }
+      ]
+    },
+    {
+      "id": "h_analytics_02",
+      "lang": "kk",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [
+        "011343.100.000000",
+        133.33,
+        135.0,
+        35.0
+      ],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.2,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "пьяз",
+          "customer": null,
+          "missed": [
+            "011343.100.000000",
+            133.33,
+            135.0,
+            35.0
+          ],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.2
+        },
+        {
+          "intent": "analytics",
+          "item": "пьяз",
+          "customer": null,
+          "missed": [
+            "011343.100.000000",
+            133.33,
+            135.0,
+            35.0
+          ],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.8
+        },
+        {
+          "intent": "analytics",
+          "item": "пьяз",
+          "customer": null,
+          "missed": [
+            "011343.100.000000",
+            133.33,
+            135.0,
+            35.0
+          ],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.8
+        }
+      ]
+    },
+    {
+      "id": "h_analytics_03",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 8,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 3.8,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "канцелярский степлер",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        },
+        {
+          "intent": "analytics",
+          "item": "канцелярский степлер",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.3
+        },
+        {
+          "intent": "analytics",
+          "item": "канцелярский степлер",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 8,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.2
+        }
+      ]
+    },
+    {
+      "id": "h_analytics_04",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 12,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.1,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "батарейка типа АА",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 12,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.1
+        },
+        {
+          "intent": "analytics",
+          "item": "батарейка типа АА",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 12,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.7
+        },
+        {
+          "intent": "analytics",
+          "item": "батарейка типа АА",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 12,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.6
+        }
+      ]
+    },
+    {
+      "id": "h_analytics_05",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.1,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": "Отель «Алатау»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        },
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": "Отель «Алатау»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.6
+        },
+        {
+          "intent": "analytics",
+          "item": null,
+          "customer": "Отель «Алатау»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.5
+        }
+      ]
+    },
+    {
+      "id": "h_compare_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "compare",
+      "intent": "compare",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 5,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.2,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": "Института парламентаризма; ТОО «Казстройсистема»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        },
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": "Института парламентаризма; ТОО «Казстройсистема»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.5
+        },
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": "Института парламентаризма; ТОО «Казстройсистема»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.5
+        }
+      ]
+    },
+    {
+      "id": "h_compare_02",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "compare",
+      "intent": "compare",
+      "facts": 2,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 2,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.0,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "compare",
+          "item": "канцелярские степлеры",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 2,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "compare",
+          "item": "канцелярские степлеры",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 2,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 2.8
+        },
+        {
+          "intent": "compare",
+          "item": "канцелярские степлеры",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 2,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 2.7
+        }
+      ]
+    },
+    {
+      "id": "h_compare_03",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "compare",
+      "intent": "compare",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 11,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": "Президентский центр",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 11,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.6
+        },
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": "Президентский центр",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 11,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "compare",
+          "item": null,
+          "customer": "Президентский центр",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 11,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        }
+      ]
+    },
+    {
+      "id": "h_price_anomaly_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 5,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.5,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": "Дирекция государственных резиденций",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.5
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": "Дирекция государственных резиденций",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.7
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": "Дирекция государственных резиденций",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.7
+        }
+      ]
+    },
+    {
+      "id": "h_price_anomaly_02",
+      "lang": "kk",
+      "group": null,
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 2,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 2,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 9.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": "картофель",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 2,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 9.3
+        },
+        {
+          "intent": "price_anomaly",
+          "item": "картофель",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 2,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 8.8
+        },
+        {
+          "intent": "price_anomaly",
+          "item": "картофель",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 2,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 8.7
+        }
+      ]
+    },
+    {
+      "id": "h_price_anomaly_03",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 2,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.7,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": "канцелярские степлеры",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.7
+        },
+        {
+          "intent": "price_anomaly",
+          "item": "канцелярские степлеры",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.9
+        },
+        {
+          "intent": "price_anomaly",
+          "item": "канцелярские степлеры",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        }
+      ]
+    },
+    {
+      "id": "h_volume_anomaly_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 3,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.2,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "Отель «Алатау»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.2
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "Отель «Алатау»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "Отель «Алатау»",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.9
+        }
+      ]
+    },
+    {
+      "id": "h_volume_anomaly_02",
+      "lang": "kk",
+      "group": null,
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 6.4,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "Инженерлік-техникалық орталық",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 6.4
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "Инженерлік-техникалық орталық",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.7
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": "Инженерлік-техникалық орталық",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.8
+        }
+      ]
+    },
+    {
+      "id": "h_fair_price_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.1,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.4
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.5
+        }
+      ]
+    },
+    {
+      "id": "h_fair_price_02",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 3.9,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.9
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.3
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.2
+        }
+      ]
+    },
+    {
+      "id": "h_fair_price_03",
+      "lang": "kk",
+      "group": null,
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.5,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.5
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.0
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.0
+        }
+      ]
+    },
+    {
+      "id": "h_edge_01",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 0,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.1,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": "доллар",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.1
+        },
+        {
+          "intent": "search",
+          "item": "доллар",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.7
+        },
+        {
+          "intent": "search",
+          "item": "доллар",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.7
+        }
+      ]
+    },
+    {
+      "id": "h_edge_02",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 0,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.1,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "Министерство здравоохранения",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.1
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "Министерство здравоохранения",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.9
+        },
+        {
+          "intent": "search",
+          "item": null,
+          "customer": "Министерство здравоохранения",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.8
+        }
+      ]
+    },
+    {
+      "id": "h_edge_03",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 0,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.4,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": "№99999999-ЗЦП1",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.4
+        },
+        {
+          "intent": "fair_price",
+          "item": "№99999999-ЗЦП1",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.1
+        },
+        {
+          "intent": "fair_price",
+          "item": "№99999999-ЗЦП1",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.1
+        }
+      ]
+    },
+    {
+      "id": "h_edge_04",
+      "lang": "ru",
+      "group": null,
+      "intent_expected": "search",
+      "intent": "search",
+      "facts": 0,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "template",
+      "validation": {},
+      "seconds": 1.0,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "search",
+          "item": "картофель",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 1.0
+        },
+        {
+          "intent": "search",
+          "item": "картофель",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.7
+        },
+        {
+          "intent": "search",
+          "item": "картофель",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "template",
+          "validation": {},
+          "seconds": 0.7
+        }
+      ]
+    }
+  ]
+}

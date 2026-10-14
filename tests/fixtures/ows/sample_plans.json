@@ -1,0 +1,120 @@
+{
+ "data": {
+  "Plans": [
+   {
+    "id": 81894257,
+    "rootrecordId": 72514081,
+    "subjectBiin": "000740001307",
+    "nameRu": "Топливо дизельное",
+    "nameKz": "Дизельді жанармай",
+    "descRu": "летнее",
+    "extraDescRu": "Дизельное топливо (летнее)",
+    "refEnstruCode": "192026.510.000000",
+    "refUnitsCode": "112",
+    "count": 469600,
+    "price": 263.39,
+    "amount": 123687944,
+    "refMonthsId": 12,
+    "plnPointYear": 2025,
+    "refPlnPointStatusId": 19,
+    "refTradeMethodsId": 2,
+    "refSubjectTypeId": 1,
+    "isDeleted": 0,
+    "dateCreate": "2025-12-12 11:02:28",
+    "timestamp": "2025-12-19 16:02:16",
+    "indexDate": "2026-10-09 23:05:44",
+    "PlansKato": null,
+    "RefUnits": {
+     "code": "112",
+     "nameRu": "Литр (куб. дм.)",
+     "alphaCode": "L"
+    },
+    "RefEnstru": {
+     "code": "192026.510.000000",
+     "nameRu": "Топливо дизельное",
+     "edizm": "",
+     "mkei": 0
+    }
+   },
+   {
+    "id": 81138640,
+    "rootrecordId": 81101174,
+    "subjectBiin": "000740001307",
+    "nameRu": "Услуги по предоставлению доступа к информационным ресурсам",
+    "nameKz": "Ақпараттық ресурстарға қол жеткізу қызметі",
+    "descRu": "Услуги по предоставлению доступа к информационным ресурсам (сертификация пользователей, получение доступа и др.)",
+    "extraDescRu": "Услуги по предоставлению доступа к информационным ресурсам",
+    "refEnstruCode": "620920.000.000013",
+    "refUnitsCode": "5114",
+    "count": 1,
+    "price": 210642.86,
+    "amount": 210642.86,
+    "refMonthsId": 11,
+    "plnPointYear": 2025,
+    "refPlnPointStatusId": 19,
+    "refTradeMethodsId": 23,
+    "refSubjectTypeId": 3,
+    "isDeleted": 0,
+    "dateCreate": "2025-11-18 17:42:56",
+    "timestamp": "2025-12-17 14:50:47",
+    "indexDate": "2026-10-09 23:05:44",
+    "PlansKato": null,
+    "RefUnits": {
+     "code": "5114",
+     "nameRu": "Одна услуга",
+     "alphaCode": "1 усл"
+    },
+    "RefEnstru": {
+     "code": "620920.000.000013",
+     "nameRu": "Услуги по предоставлению доступа к информационным ресурсам",
+     "edizm": "",
+     "mkei": 0
+    }
+   },
+   {
+    "id": 81108158,
+    "rootrecordId": 80813985,
+    "subjectBiin": "000740001307",
+    "nameRu": "Услуги по медицинскому страхованию на случай болезни",
+    "nameKz": "Ауырған жағдайда медициналық сақтандыру бойынша қызметтер",
+    "descRu": "Услуги по медицинскому страхованию на случай болезни",
+    "extraDescRu": "Медицинское страхование выезжающих за рубеж",
+    "refEnstruCode": "749020.000.000010",
+    "refUnitsCode": "5114",
+    "count": 1,
+    "price": 101094,
+    "amount": 101094,
+    "refMonthsId": 11,
+    "plnPointYear": 2025,
+    "refPlnPointStatusId": 19,
+    "refTradeMethodsId": 3,
+    "refSubjectTypeId": 3,
+    "isDeleted": 0,
+    "dateCreate": "2025-11-17 16:39:28",
+    "timestamp": "2026-01-14 17:36:33",
+    "indexDate": "2026-10-09 23:05:44",
+    "PlansKato": null,
+    "RefUnits": {
+     "code": "5114",
+     "nameRu": "Одна услуга",
+     "alphaCode": "1 усл"
+    },
+    "RefEnstru": {
+     "code": "749020.000.000010",
+     "nameRu": "Услуги по медицинскому страхованию на случай болезни",
+     "edizm": "",
+     "mkei": 0
+    }
+   }
+  ]
+ },
+ "extensions": {
+  "pageInfo": {
+   "limitPage": 3,
+   "totalCount": 469,
+   "hasNextPage": true,
+   "lastId": 81108158,
+   "lastIndexDate": "2026-10-09 23:05:44"
+  }
+ }
+}

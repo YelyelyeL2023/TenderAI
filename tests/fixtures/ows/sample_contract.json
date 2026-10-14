@@ -1,0 +1,93 @@
+{
+ "data": {
+  "Contract": [
+   {
+    "id": 24066561,
+    "parentId": 22383582,
+    "rootId": 22383582,
+    "trdBuyId": 14213008,
+    "trdBuyNumberAnno": "14213008-1",
+    "contractNumber": "000740001307/250052/01",
+    "contractNumberSys": "000740001307/250052/01",
+    "customerBin": "000740001307",
+    "supplierBiin": "190740009401",
+    "refContractStatusId": 390,
+    "deleted": 0,
+    "finYear": 2025,
+    "contractSum": 570000,
+    "contractSumWnds": 570000,
+    "signDate": "2025-12-31 14:55:20",
+    "faktSumWnds": 570000,
+    "refCurrencyCode": "KZT",
+    "faktTradeMethodsId": 6,
+    "descriptionRu": "Услуги по техническому и сервисному обслуживанию ворот для автотранспорта ангара",
+    "lastUpdateDate": "2026-01-09 09:13:12",
+    "indexDate": "2026-04-15T05:32:49.494",
+    "ContractUnits": [
+     {
+      "id": 54520936,
+      "lotId": 35199587,
+      "plnPointId": 73771718,
+      "itemPrice": 570000,
+      "itemPriceWnds": 570000,
+      "quantity": 1,
+      "totalSum": 690000,
+      "totalSumWnds": 690000,
+      "deleted": 0,
+      "refEnstruCode": [
+       "960919.900.000013"
+      ]
+     }
+    ]
+   },
+   {
+    "id": 24003493,
+    "parentId": 21811408,
+    "rootId": 21811408,
+    "trdBuyId": 13472861,
+    "trdBuyNumberAnno": "13472861-1",
+    "contractNumber": "000740001307/250016/01",
+    "contractNumberSys": "000740001307/250016/01",
+    "customerBin": "000740001307",
+    "supplierBiin": "600322350327",
+    "refContractStatusId": 390,
+    "deleted": 0,
+    "finYear": 2025,
+    "contractSum": 123689285.71,
+    "contractSumWnds": 138532000,
+    "signDate": "2025-12-19 15:27:04",
+    "faktSumWnds": 138532000,
+    "refCurrencyCode": "KZT",
+    "faktTradeMethodsId": 2,
+    "descriptionRu": "Дизельное топливо (летнее) на 2025 год",
+    "lastUpdateDate": "2025-12-19 16:02:16",
+    "indexDate": "2026-04-15T05:33:10.970",
+    "ContractUnits": [
+     {
+      "id": 54386395,
+      "lotId": 33514419,
+      "plnPointId": 81894257,
+      "itemPrice": 263.39,
+      "itemPriceWnds": 295,
+      "quantity": 469600,
+      "totalSum": 123687944,
+      "totalSumWnds": 138530497.28,
+      "deleted": 0,
+      "refEnstruCode": [
+       "192026.510.000000"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "extensions": {
+  "pageInfo": {
+   "limitPage": 2,
+   "totalCount": 195,
+   "hasNextPage": true,
+   "lastId": 24003493,
+   "lastIndexDate": "2026-04-15T05:33:10.970"
+  }
+ }
+}

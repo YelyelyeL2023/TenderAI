@@ -1,0 +1,1671 @@
+{
+  "cases": 24,
+  "repeats": 3,
+  "fact_accuracy": 0.9481,
+  "facts_total": 231,
+  "facts_correct": 219,
+  "facts_echoed_not_scored": 6,
+  "check_accuracy": 1.0,
+  "checks_total": 18,
+  "checks_passed": 18,
+  "intent_accuracy": 1.0,
+  "llm_verdict_share": 1.0,
+  "llm": true,
+  "worst_run_fact_accuracy": 0.9481,
+  "stable_share": 1.0,
+  "unstable": [],
+  "results": [
+    {
+      "id": "anomaly_30_1",
+      "lang": "ru",
+      "group": "anomaly_30",
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.3
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.3
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.3
+        }
+      ]
+    },
+    {
+      "id": "anomaly_30_2",
+      "lang": "ru",
+      "group": "anomaly_30",
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.0,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.5
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.3
+        }
+      ]
+    },
+    {
+      "id": "anomaly_30_3",
+      "lang": "ru",
+      "group": "anomaly_30",
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.3
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.5
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.4
+        }
+      ]
+    },
+    {
+      "id": "anomaly_30_4",
+      "lang": "ru",
+      "group": "anomaly_30",
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.2,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.4
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.3
+        }
+      ]
+    },
+    {
+      "id": "anomaly_30_5",
+      "lang": "ru",
+      "group": "anomaly_30",
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.3
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.4
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.6
+        }
+      ]
+    },
+    {
+      "id": "anomaly_30_6",
+      "lang": "kk",
+      "group": "anomaly_30",
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 3,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.7,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.7
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.9
+        }
+      ]
+    },
+    {
+      "id": "anomaly_30_7",
+      "lang": "kk",
+      "group": "anomaly_30",
+      "intent_expected": "price_anomaly",
+      "intent": "price_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 4,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.9,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.9
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        },
+        {
+          "intent": "price_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 4,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        }
+      ]
+    },
+    {
+      "id": "fair_lot_1",
+      "lang": "ru",
+      "group": "fair_lot",
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.6
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.9
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.9
+        }
+      ]
+    },
+    {
+      "id": "fair_lot_2",
+      "lang": "ru",
+      "group": "fair_lot",
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.5,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.5
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        }
+      ]
+    },
+    {
+      "id": "fair_lot_3",
+      "lang": "ru",
+      "group": "fair_lot",
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.4,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.4
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.7
+        }
+      ]
+    },
+    {
+      "id": "fair_lot_4",
+      "lang": "ru",
+      "group": "fair_lot",
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.8,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": "73177002-зцп1",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.8
+        },
+        {
+          "intent": "fair_price",
+          "item": "73177002-зцп1",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.5
+        },
+        {
+          "intent": "fair_price",
+          "item": "73177002-зцп1",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        }
+      ]
+    },
+    {
+      "id": "fair_lot_5",
+      "lang": "kk",
+      "group": "fair_lot",
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 3,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.6,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": "73177002-ЗЦП1",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.6
+        },
+        {
+          "intent": "fair_price",
+          "item": "73177002-ЗЦП1",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.7
+        },
+        {
+          "intent": "fair_price",
+          "item": "73177002-ЗЦП1",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 3,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.9
+        }
+      ]
+    },
+    {
+      "id": "fair_lot_6",
+      "lang": "kk",
+      "group": "fair_lot",
+      "intent_expected": "fair_price",
+      "intent": "fair_price",
+      "facts": 3,
+      "facts_echoed": 1,
+      "missed": [],
+      "checks": 1,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 5,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 6.2,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": "лотының",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 6.2
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": "лотының",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.6
+        },
+        {
+          "intent": "fair_price",
+          "item": null,
+          "customer": "лотының",
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.7
+        }
+      ]
+    },
+    {
+      "id": "volume_growth_1",
+      "lang": "ru",
+      "group": "volume_growth",
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.1,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.1
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        }
+      ]
+    },
+    {
+      "id": "volume_growth_2",
+      "lang": "ru",
+      "group": "volume_growth",
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.2,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.2
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.7
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.5
+        }
+      ]
+    },
+    {
+      "id": "volume_growth_3",
+      "lang": "ru",
+      "group": "volume_growth",
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.5,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.5
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        }
+      ]
+    },
+    {
+      "id": "volume_growth_4",
+      "lang": "ru",
+      "group": "volume_growth",
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.7,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.7
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.2
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        }
+      ]
+    },
+    {
+      "id": "volume_growth_5",
+      "lang": "kk",
+      "group": "volume_growth",
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 2,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 9.5,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 2,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 9.5
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 2,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 8.8
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 2,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 8.8
+        }
+      ]
+    },
+    {
+      "id": "volume_growth_6",
+      "lang": "kk",
+      "group": "volume_growth",
+      "intent_expected": "volume_anomaly",
+      "intent": "volume_anomaly",
+      "facts": 3,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 5,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.2,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.2
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.9
+        },
+        {
+          "intent": "volume_anomaly",
+          "item": null,
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.5
+        }
+      ]
+    },
+    {
+      "id": "diesel_2025_1",
+      "lang": "ru",
+      "group": "diesel_2025",
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 7,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 3.9,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.9
+        },
+        {
+          "intent": "analytics",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.2
+        },
+        {
+          "intent": "analytics",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 7,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.2
+        }
+      ]
+    },
+    {
+      "id": "diesel_2025_2",
+      "lang": "ru",
+      "group": "diesel_2025",
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 10,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.8,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 10,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.8
+        },
+        {
+          "intent": "analytics",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 10,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.1
+        },
+        {
+          "intent": "analytics",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 10,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        }
+      ]
+    },
+    {
+      "id": "diesel_2025_3",
+      "lang": "ru",
+      "group": "diesel_2025",
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [
+        "192026.510.000000",
+        286.45,
+        285.66,
+        36.0
+      ],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 5,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 3.8,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "летнее дизтопливо",
+          "customer": null,
+          "missed": [
+            "192026.510.000000",
+            286.45,
+            285.66,
+            36.0
+          ],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        },
+        {
+          "intent": "analytics",
+          "item": "летнее дизтопливо",
+          "customer": null,
+          "missed": [
+            "192026.510.000000",
+            286.45,
+            285.66,
+            36.0
+          ],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.5
+        },
+        {
+          "intent": "analytics",
+          "item": "летнее дизтопливо",
+          "customer": null,
+          "missed": [
+            "192026.510.000000",
+            286.45,
+            285.66,
+            36.0
+          ],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 5,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.3
+        }
+      ]
+    },
+    {
+      "id": "diesel_2025_4",
+      "lang": "ru",
+      "group": "diesel_2025",
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 10,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 4.5,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 10,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.5
+        },
+        {
+          "intent": "analytics",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 10,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.8
+        },
+        {
+          "intent": "analytics",
+          "item": "летнее дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 10,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.7
+        }
+      ]
+    },
+    {
+      "id": "diesel_2025_5",
+      "lang": "kk",
+      "group": "diesel_2025",
+      "intent_expected": "analytics",
+      "intent": "analytics",
+      "facts": 4,
+      "facts_echoed": 0,
+      "missed": [],
+      "checks": 0,
+      "failed_checks": [],
+      "verdict_source": "llm",
+      "validation": {
+        "attempt": 1,
+        "checked": 6,
+        "unsupported": [],
+        "issues": []
+      },
+      "seconds": 5.3,
+      "stable": true,
+      "attempts": [
+        {
+          "intent": "analytics",
+          "item": "дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 5.3
+        },
+        {
+          "intent": "analytics",
+          "item": "дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 4.0
+        },
+        {
+          "intent": "analytics",
+          "item": "дизельное топливо",
+          "customer": null,
+          "missed": [],
+          "failed_checks": [],
+          "verdict_source": "llm",
+          "validation": {
+            "attempt": 1,
+            "checked": 6,
+            "unsupported": [],
+            "issues": []
+          },
+          "seconds": 3.9
+        }
+      ]
+    }
+  ]
+}

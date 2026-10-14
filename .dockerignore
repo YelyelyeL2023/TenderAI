@@ -1,0 +1,9 @@
+.env
+*.env
+.venv
+data
+tests/fixtures
+**/__pycache__
+.git
+*.docx
+cpi_dataset

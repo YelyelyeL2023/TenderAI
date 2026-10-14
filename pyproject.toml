@@ -1,0 +1,47 @@
+[project]
+name = "tenderai"
+version = "0.1.0"
+description = "Explainable AI agent for Kazakhstan public procurement analytics (goszakup OWS v3)"
+requires-python = ">=3.11"
+dependencies = [
+  "httpx>=0.27",
+  "psycopg[binary,pool]>=3.2",
+  "pydantic>=2.7",
+  "pydantic-settings>=2.3",
+  "numpy>=1.26",
+  "scikit-learn>=1.5",
+  "fastapi>=0.111",
+  "uvicorn[standard]>=0.30",
+  "jinja2>=3.1",
+  "openpyxl>=3.1",
+  "openai>=1.35",
+  "apscheduler>=3.10,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23", "ruff>=0.5"]
+
+[project.scripts]
+tenderai = "tenderai.cli:main"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["tenderai*"]
+
+[tool.setuptools.package-data]
+tenderai = ["db/sql/*.sql", "agent/templates/*", "api/static/*", "data/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 110
+extend-exclude = ["docs/report"]  # PDF build scripts (reportlab, exec-shared helpers), not package code
+
+[tool.ruff.lint]
+# multi-line Russian/Kazakh message strings are concatenated implicitly on purpose
+ignore = ["ISC004", "PYI034"]

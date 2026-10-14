@@ -1,0 +1,63 @@
+name: tenderai
+services:
+  postgres:
+    image: postgres:16.4-alpine
+    # Docker's default 64 MB /dev/shm is too small for parallel queries over the marts
+    shm_size: 1gb
+    command: ["postgres", "-c", "shared_buffers=512MB", "-c", "work_mem=64MB", "-c", "maintenance_work_mem=256MB",
+              "-c", "effective_cache_size=2GB"]
+    environment:
+      POSTGRES_DB: tenderai
+      POSTGRES_USER: tenderai
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-tenderai}
+    ports: ["${PG_HOST_PORT:-5434}:5432"]
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tenderai -d tenderai"]
+      interval: 5s
+      retries: 20
+  ollama:
+    image: ollama/ollama:0.40.3
+    ports: ["${OLLAMA_HOST_PORT:-11434}:11434"]
+    volumes:
+      - ollama:/root/.ollama
+    environment:
+      OLLAMA_KEEP_ALIVE: 30m
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+  migrate:
+    build: {context: .., dockerfile: deploy/Dockerfile}
+    image: tenderai:0.1.0
+    command: ["tenderai", "migrate"]
+    environment: &appenv
+      OWS_TOKEN: ${OWS_TOKEN:-}
+      DATABASE_URL: postgresql://tenderai:${POSTGRES_PASSWORD:-tenderai}@postgres:5432/tenderai
+      AGENT_DATABASE_URL: postgresql://tenderai_agent:${AGENT_DB_PASSWORD:-tenderai_agent}@postgres:5432/tenderai
+      LLM_BASE_URL: http://ollama:11434
+      LLM_MODEL: ${LLM_MODEL:-qwen3.5:9b}
+    depends_on: {postgres: {condition: service_healthy}}
+    restart: "no"
+  api:
+    image: tenderai:0.1.0
+    environment: *appenv
+    ports: ["${API_HOST_PORT:-8010}:8010"]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      ollama: {condition: service_started}
+    restart: unless-stopped
+  worker:
+    image: tenderai:0.1.0
+    command: ["tenderai", "worker"]
+    environment: *appenv
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    restart: unless-stopped
+volumes:
+  pgdata:
+  ollama:
