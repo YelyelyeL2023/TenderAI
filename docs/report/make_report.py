@@ -91,10 +91,14 @@ def md_answer(md: str):
         if table:
             rows = [[Paragraph(inline(c.strip()), st) for c in r.strip().strip("|").split("|")] for r in table
                     if not re.match(r"^\|[-|\s]+\|$", r.strip())]
-            t = Table(rows, repeatRows=1)
-            t.setStyle(TableStyle([("GRID", (0, 0), (-1, -1), 0.3, RULE), ("BACKGROUND", (0, 0), (-1, 0), CODE_BG),
-                                   ("LEFTPADDING", (0, 0), (-1, -1), 2), ("RIGHTPADDING", (0, 0), (-1, -1), 2)]))
-            items.append(t)
+            t = Table(rows)
+            t.wrap(170 * mm - 16, 0)  # measure once, then emit one table per row so the answer box can split
+            for i, r in enumerate(rows):
+                rt = Table([r], colWidths=t._colWidths)
+                rt.setStyle(TableStyle([("GRID", (0, 0), (-1, -1), 0.3, RULE),
+                                        ("BACKGROUND", (0, 0), (-1, -1), CODE_BG if i == 0 else colors.white),
+                                        ("LEFTPADDING", (0, 0), (-1, -1), 2), ("RIGHTPADDING", (0, 0), (-1, -1), 2)]))
+                items.append(rt)
             table.clear()
 
     for line in md.splitlines():
@@ -109,10 +113,11 @@ def md_answer(md: str):
             items.append(Paragraph(("• " if m and m.group(1) == "- " else (m.group(1) if m else "")) +
                                    inline(m.group(2) if m else line), st))
     flush()
-    box_t = Table([[items]], colWidths=[170 * mm])
+    box_t = Table([[it] for it in items], colWidths=[170 * mm])  # one row per item so a long answer can split
     box_t.setStyle(TableStyle([("BOX", (0, 0), (-1, -1), 0.5, RULE), ("BACKGROUND", (0, 0), (-1, -1), colors.white),
                                ("LEFTPADDING", (0, 0), (-1, -1), 8), ("RIGHTPADDING", (0, 0), (-1, -1), 8),
-                               ("TOPPADDING", (0, 0), (-1, -1), 6), ("BOTTOMPADDING", (0, 0), (-1, -1), 8)]))
+                               ("TOPPADDING", (0, 0), (-1, -1), 0), ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
+                               ("TOPPADDING", (0, 0), (-1, 0), 6), ("BOTTOMPADDING", (0, -1), (-1, -1), 8)]))
     return box_t
 
 
