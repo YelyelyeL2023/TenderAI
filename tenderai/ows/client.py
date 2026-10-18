@@ -29,6 +29,8 @@ class OwsError(RuntimeError):
 class OwsClient:
     def __init__(self, settings: Settings | None = None, max_retries: int = 6):
         self.settings = settings or get_settings()
+        if not self.settings.ows_token.get_secret_value():
+            raise OwsError("OWS_TOKEN is not set — ingest needs the token issued for OWS v3")
         self.max_retries = max_retries
         self._sem = asyncio.Semaphore(self.settings.ows_concurrency)
         self._http = httpx.AsyncClient(

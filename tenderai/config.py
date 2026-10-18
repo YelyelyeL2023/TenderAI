@@ -19,7 +19,8 @@ TARGET_YEARS: tuple[int, ...] = (2024, 2025, 2026)
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
-    ows_token: SecretStr
+    # Only ingest (backfill / incremental / worker) needs it; the API and migrations run without the token.
+    ows_token: SecretStr = SecretStr("")
     ows_base_url: str = "https://ows.goszakup.gov.kz"
     ows_concurrency: int = 4
     ows_page_size: int = 200  # server-side maximum for GraphQL

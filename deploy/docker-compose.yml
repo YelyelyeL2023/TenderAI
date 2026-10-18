@@ -1,4 +1,10 @@
 name: tenderai
+# Shared by every app container. OWS_TOKEN is not here: only the worker calls OWS, so only it gets the token.
+x-appenv: &appenv
+  DATABASE_URL: postgresql://tenderai:${POSTGRES_PASSWORD:-tenderai}@postgres:5432/tenderai
+  AGENT_DATABASE_URL: postgresql://tenderai_agent:${AGENT_DB_PASSWORD:-tenderai_agent}@postgres:5432/tenderai
+  LLM_BASE_URL: http://ollama:11434
+  LLM_MODEL: ${LLM_MODEL:-qwen3.5:9b}
 services:
   postgres:
     image: postgres:16.4-alpine
@@ -35,12 +41,10 @@ services:
     build: {context: .., dockerfile: deploy/Dockerfile}
     image: tenderai:0.1.0
     command: ["tenderai", "migrate"]
-    environment: &appenv
-      OWS_TOKEN: ${OWS_TOKEN:-}
-      DATABASE_URL: postgresql://tenderai:${POSTGRES_PASSWORD:-tenderai}@postgres:5432/tenderai
-      AGENT_DATABASE_URL: postgresql://tenderai_agent:${AGENT_DB_PASSWORD:-tenderai_agent}@postgres:5432/tenderai
-      LLM_BASE_URL: http://ollama:11434
-      LLM_MODEL: ${LLM_MODEL:-qwen3.5:9b}
+    environment:
+      <<: *appenv
+      # migrate sets the agent role's password, so it always matches AGENT_DATABASE_URL
+      AGENT_DB_PASSWORD: ${AGENT_DB_PASSWORD:-tenderai_agent}
     depends_on: {postgres: {condition: service_healthy}}
     restart: "no"
   api:
@@ -54,7 +58,9 @@ services:
   worker:
     image: tenderai:0.1.0
     command: ["tenderai", "worker"]
-    environment: *appenv
+    environment:
+      <<: *appenv
+      OWS_TOKEN: ${OWS_TOKEN:-}
     depends_on:
       migrate: {condition: service_completed_successfully}
     restart: unless-stopped

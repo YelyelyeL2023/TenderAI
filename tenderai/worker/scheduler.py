@@ -1,5 +1,5 @@
 """Long-running worker: incremental sync every 3 hours (SLA: data lag < 24 h).
-In Kubernetes the same job runs as a CronJob instead (deploy/k8s/cronjob-incremental.yaml)."""
+In Kubernetes the same job runs as the tenderai-incremental CronJob instead (deploy/k8s/30-app.yaml)."""
 from __future__ import annotations
 
 import asyncio

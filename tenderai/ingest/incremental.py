@@ -4,7 +4,9 @@
    This touches only our customers (~108 small requests) instead of re-fetching the whole national journal.
 2. Deletions: page through /v3/journal for the same window and soft-delete stored objects with action 'D'
    (deletions cannot be discovered by a filtered query).
-3. Fetch announcements/suppliers newly referenced, rebuild core + marts, advance the watermark.
+3. Fetch announcements/suppliers newly referenced and advance the 'incremental' watermark.
+4. Rebuild core + marts; the ETL advances the 'journal' watermark that /health reports, so a failed rebuild shows
+   as growing lag (and an 'etl_failed' run) instead of fresh data.
 """
 from __future__ import annotations
 
@@ -110,17 +112,20 @@ async def incremental(with_etl: bool = True) -> dict:
             await conn.execute(
                 "INSERT INTO ops.watermark (name, value) VALUES ('incremental', %s) "
                 "ON CONFLICT (name) DO UPDATE SET value = EXCLUDED.value, updated_at = now()", (now,))
-            # the API freshness endpoint reads the 'journal' watermark
-            await conn.execute(
-                "INSERT INTO ops.watermark (name, value) VALUES ('journal', %s) "
-                "ON CONFLICT (name) DO UPDATE SET value = EXCLUDED.value, updated_at = now()", (now,))
-            await run.finish("ok")
             await conn.commit()
         except Exception as e:
             await conn.rollback()
             await run.finish("failed", repr(e))
             await conn.commit()
             raise
-    if with_etl:
-        run.stats["etl"] = await asyncio.to_thread(run_etl)
+        # raw is committed; the 'journal' freshness watermark moves only when run_etl rebuilds the marts
+        if with_etl:
+            try:
+                run.stats["etl"] = await asyncio.to_thread(run_etl)
+            except Exception as e:
+                await run.finish("etl_failed", repr(e))
+                await conn.commit()
+                raise
+        await run.finish("ok")
+        await conn.commit()
     return run.stats

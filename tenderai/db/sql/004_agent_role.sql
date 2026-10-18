@@ -1,5 +1,5 @@
 -- Read-only role for the agent's tools. The dev password is overridden in production via
--- `ALTER ROLE tenderai_agent PASSWORD ...` from a secret (see deploy/k8s/README).
+-- `ALTER ROLE tenderai_agent PASSWORD ...` from a secret (see deploy/k8s/README.md).
 DO $$
 BEGIN
   IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'tenderai_agent') THEN

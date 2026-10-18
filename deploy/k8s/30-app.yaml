@@ -16,8 +16,6 @@ spec:
               valueFrom: {secretKeyRef: {name: tenderai-secrets, key: POSTGRES_PASSWORD}}
             - name: AGENT_DB_PASSWORD
               valueFrom: {secretKeyRef: {name: tenderai-secrets, key: AGENT_DB_PASSWORD}}
-            - name: OWS_TOKEN
-              valueFrom: {secretKeyRef: {name: tenderai-secrets, key: OWS_TOKEN}}
             - {name: DATABASE_URL, value: "postgresql://tenderai:$(POSTGRES_PASSWORD)@postgres:5432/tenderai"}
             - {name: AGENT_DATABASE_URL, value: "postgresql://tenderai_agent:$(AGENT_DB_PASSWORD)@postgres:5432/tenderai"}
 ---
@@ -41,8 +39,6 @@ spec:
               valueFrom: {secretKeyRef: {name: tenderai-secrets, key: POSTGRES_PASSWORD}}
             - name: AGENT_DB_PASSWORD
               valueFrom: {secretKeyRef: {name: tenderai-secrets, key: AGENT_DB_PASSWORD}}
-            - name: OWS_TOKEN
-              valueFrom: {secretKeyRef: {name: tenderai-secrets, key: OWS_TOKEN}}
             - {name: DATABASE_URL, value: "postgresql://tenderai:$(POSTGRES_PASSWORD)@postgres:5432/tenderai"}
             - {name: AGENT_DATABASE_URL, value: "postgresql://tenderai_agent:$(AGENT_DB_PASSWORD)@postgres:5432/tenderai"}
           readinessProbe: {httpGet: {path: /health, port: 8010}, periodSeconds: 15, timeoutSeconds: 10}

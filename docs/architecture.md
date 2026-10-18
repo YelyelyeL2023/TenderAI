@@ -117,6 +117,8 @@ no internet access.
 
 - The OWS token lives only in the environment, a Docker or Kubernetes secret, or a gitignored `.env`.
   It is a `SecretStr` in settings, and the httpx request log is silenced so URLs and headers never reach logs.
+  Only the containers that call OWS (the compose `worker`, the Kubernetes incremental CronJob) receive it; the API
+  and the migration job run without it.
 - The agent connects with a read-only role restricted to `core` and `mart`, with a 15 s statement timeout. The tools
   build SQL only from fixed templates with bound parameters; the LLM never writes SQL.
 - Containers run as non-root, and the image excludes `.env`, data and fixtures (`.dockerignore`).

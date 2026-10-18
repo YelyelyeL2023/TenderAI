@@ -60,6 +60,14 @@ def run_etl(database_url: str | None = None, with_marts: bool = True) -> dict:
             conn.execute(_sql("dq.sql"))
             if with_marts:
                 conn.execute(_sql("marts.sql"))
+                # 'journal' is the freshness /health reports: the raw state these marts were just built from.
+                # Set here, in the same transaction, so a failed rebuild never reports fresh data.
+                conn.execute(
+                    "INSERT INTO ops.watermark (name, value) "
+                    "SELECT 'journal', v FROM (SELECT coalesce("
+                    "  (SELECT value FROM ops.watermark WHERE name = 'incremental'),"
+                    "  (SELECT max(fetched_at) FROM raw.ows_object))) s(v) WHERE v IS NOT NULL "
+                    "ON CONFLICT (name) DO UPDATE SET value = EXCLUDED.value, updated_at = now()")
         for table in ("plan_point", "announcement", "lot", "contract", "contract_unit", "subject", "dq_issue"):
             stats[table] = conn.execute(f"SELECT count(*) FROM core.{table}").fetchone()[0]
         conn.execute("ANALYZE")
